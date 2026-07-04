@@ -165,6 +165,7 @@ def add_features(cdf):
 @st.cache_data(ttl=3600, show_spinner="Fetching live air quality data...")
 def fetch_live_data(city, api_key):
     """Fetch last 35 days of hourly pollution data and aggregate to daily."""
+    api_key = api_key.strip() if api_key else ""
     if city not in CITY_COORDS:
         return None, f"City '{city}' coordinates not available"
     lat, lon = CITY_COORDS[city]
