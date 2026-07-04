@@ -170,7 +170,7 @@ def fetch_live_data(city, api_key):
         return None, f"City '{city}' coordinates not available"
     lat, lon = CITY_COORDS[city]
     now = int(time.time())
-    start = now - 35 * 86400  # 35 days back
+    start = now - 70 * 86400  # 70 days back for lag-30 + lookback-30 window
 
     url = (f"http://api.openweathermap.org/data/2.5/air_pollution/history"
            f"?lat={lat}&lon={lon}&start={start}&end={now}&appid={api_key}")
@@ -375,7 +375,7 @@ if mode == "🔴 Live Forecast":
     latest = live_df.iloc[-1]
     current_aqi = latest["AQI"]
     bk, col = aqi_bucket(current_aqi)
-    st.markdown(f"### Current AQI: **{current_aqi:.0f}** — :{col[1:]}[{bk}]")
+    st.markdown(f"### Current AQI: **{current_aqi:.0f}** — <span style='color: {col}; font-weight: bold;'>{bk}</span>", unsafe_allow_html=True)
 
     poll_cols = st.columns(4)
     for i, (poll, val) in enumerate([("PM2.5", latest["PM2.5"]), ("PM10", latest["PM10"]),
