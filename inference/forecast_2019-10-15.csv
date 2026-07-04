@@ -1,0 +1,101 @@
+City,date,day,aqi,bucket,color,step
+Ahmedabad,2019-10-16,Wednesday,600.0,Severe,#7e0023,t+1
+Ahmedabad,2019-10-17,Thursday,600.0,Severe,#7e0023,t+2
+Ahmedabad,2019-10-18,Friday,600.0,Severe,#7e0023,t+3
+Ahmedabad,2019-10-19,Saturday,600.0,Severe,#7e0023,t+4
+Ahmedabad,2019-10-20,Sunday,600.0,Severe,#7e0023,t+5
+Amaravati,2019-10-16,Wednesday,0.0,Good,#00e400,t+1
+Amaravati,2019-10-17,Thursday,94.2,Satisfactory,#92d050,t+2
+Amaravati,2019-10-18,Friday,247.6,Poor,#ff7e00,t+3
+Amaravati,2019-10-19,Saturday,389.2,Very Poor,#ff0000,t+4
+Amaravati,2019-10-20,Sunday,111.6,Moderate,#ffff00,t+5
+Amritsar,2019-10-16,Wednesday,49.0,Good,#00e400,t+1
+Amritsar,2019-10-17,Thursday,458.2,Severe,#7e0023,t+2
+Amritsar,2019-10-18,Friday,600.0,Severe,#7e0023,t+3
+Amritsar,2019-10-19,Saturday,600.0,Severe,#7e0023,t+4
+Amritsar,2019-10-20,Sunday,492.9,Severe,#7e0023,t+5
+Bengaluru,2019-10-16,Wednesday,0.0,Good,#00e400,t+1
+Bengaluru,2019-10-17,Thursday,127.7,Moderate,#ffff00,t+2
+Bengaluru,2019-10-18,Friday,301.4,Very Poor,#ff0000,t+3
+Bengaluru,2019-10-19,Saturday,411.1,Severe,#7e0023,t+4
+Bengaluru,2019-10-20,Sunday,172.4,Moderate,#ffff00,t+5
+Brajrajnagar,2019-10-16,Wednesday,308.2,Very Poor,#ff0000,t+1
+Brajrajnagar,2019-10-17,Thursday,383.8,Very Poor,#ff0000,t+2
+Brajrajnagar,2019-10-18,Friday,420.5,Severe,#7e0023,t+3
+Brajrajnagar,2019-10-19,Saturday,268.1,Poor,#ff7e00,t+4
+Brajrajnagar,2019-10-20,Sunday,334.3,Very Poor,#ff0000,t+5
+Chennai,2019-10-16,Wednesday,135.7,Moderate,#ffff00,t+1
+Chennai,2019-10-17,Thursday,302.4,Very Poor,#ff0000,t+2
+Chennai,2019-10-18,Friday,456.4,Severe,#7e0023,t+3
+Chennai,2019-10-19,Saturday,525.9,Severe,#7e0023,t+4
+Chennai,2019-10-20,Sunday,329.2,Very Poor,#ff0000,t+5
+Coimbatore,2019-10-16,Wednesday,107.2,Moderate,#ffff00,t+1
+Coimbatore,2019-10-17,Thursday,133.7,Moderate,#ffff00,t+2
+Coimbatore,2019-10-18,Friday,135.5,Moderate,#ffff00,t+3
+Coimbatore,2019-10-19,Saturday,102.9,Moderate,#ffff00,t+4
+Coimbatore,2019-10-20,Sunday,112.8,Moderate,#ffff00,t+5
+Delhi,2019-10-16,Wednesday,600.0,Severe,#7e0023,t+1
+Delhi,2019-10-17,Thursday,600.0,Severe,#7e0023,t+2
+Delhi,2019-10-18,Friday,600.0,Severe,#7e0023,t+3
+Delhi,2019-10-19,Saturday,519.7,Severe,#7e0023,t+4
+Delhi,2019-10-20,Sunday,600.0,Severe,#7e0023,t+5
+Gurugram,2019-10-16,Wednesday,206.1,Poor,#ff7e00,t+1
+Gurugram,2019-10-17,Thursday,555.2,Severe,#7e0023,t+2
+Gurugram,2019-10-18,Friday,600.0,Severe,#7e0023,t+3
+Gurugram,2019-10-19,Saturday,600.0,Severe,#7e0023,t+4
+Gurugram,2019-10-20,Sunday,600.0,Severe,#7e0023,t+5
+Guwahati,2019-10-16,Wednesday,0.0,Good,#00e400,t+1
+Guwahati,2019-10-17,Thursday,206.6,Poor,#ff7e00,t+2
+Guwahati,2019-10-18,Friday,600.0,Severe,#7e0023,t+3
+Guwahati,2019-10-19,Saturday,600.0,Severe,#7e0023,t+4
+Guwahati,2019-10-20,Sunday,425.4,Severe,#7e0023,t+5
+Hyderabad,2019-10-16,Wednesday,4.5,Good,#00e400,t+1
+Hyderabad,2019-10-17,Thursday,111.2,Moderate,#ffff00,t+2
+Hyderabad,2019-10-18,Friday,545.0,Severe,#7e0023,t+3
+Hyderabad,2019-10-19,Saturday,600.0,Severe,#7e0023,t+4
+Hyderabad,2019-10-20,Sunday,291.4,Poor,#ff7e00,t+5
+Jaipur,2019-10-16,Wednesday,198.3,Moderate,#ffff00,t+1
+Jaipur,2019-10-17,Thursday,354.1,Very Poor,#ff0000,t+2
+Jaipur,2019-10-18,Friday,440.2,Severe,#7e0023,t+3
+Jaipur,2019-10-19,Saturday,416.0,Severe,#7e0023,t+4
+Jaipur,2019-10-20,Sunday,295.7,Poor,#ff7e00,t+5
+Jorapokhar,2019-10-16,Wednesday,29.0,Good,#00e400,t+1
+Jorapokhar,2019-10-17,Thursday,85.3,Satisfactory,#92d050,t+2
+Jorapokhar,2019-10-18,Friday,307.1,Very Poor,#ff0000,t+3
+Jorapokhar,2019-10-19,Saturday,385.2,Very Poor,#ff0000,t+4
+Jorapokhar,2019-10-20,Sunday,204.0,Poor,#ff7e00,t+5
+Kolkata,2019-10-16,Wednesday,15.9,Good,#00e400,t+1
+Kolkata,2019-10-17,Thursday,120.4,Moderate,#ffff00,t+2
+Kolkata,2019-10-18,Friday,299.5,Poor,#ff7e00,t+3
+Kolkata,2019-10-19,Saturday,437.0,Severe,#7e0023,t+4
+Kolkata,2019-10-20,Sunday,161.3,Moderate,#ffff00,t+5
+Lucknow,2019-10-16,Wednesday,414.5,Severe,#7e0023,t+1
+Lucknow,2019-10-17,Thursday,591.8,Severe,#7e0023,t+2
+Lucknow,2019-10-18,Friday,600.0,Severe,#7e0023,t+3
+Lucknow,2019-10-19,Saturday,573.5,Severe,#7e0023,t+4
+Lucknow,2019-10-20,Sunday,544.3,Severe,#7e0023,t+5
+Mumbai,2019-10-16,Wednesday,59.3,Satisfactory,#92d050,t+1
+Mumbai,2019-10-17,Thursday,98.6,Satisfactory,#92d050,t+2
+Mumbai,2019-10-18,Friday,167.8,Moderate,#ffff00,t+3
+Mumbai,2019-10-19,Saturday,186.4,Moderate,#ffff00,t+4
+Mumbai,2019-10-20,Sunday,108.7,Moderate,#ffff00,t+5
+Patna,2019-10-16,Wednesday,280.1,Poor,#ff7e00,t+1
+Patna,2019-10-17,Thursday,510.7,Severe,#7e0023,t+2
+Patna,2019-10-18,Friday,600.0,Severe,#7e0023,t+3
+Patna,2019-10-19,Saturday,600.0,Severe,#7e0023,t+4
+Patna,2019-10-20,Sunday,477.8,Severe,#7e0023,t+5
+Talcher,2019-10-16,Wednesday,367.8,Very Poor,#ff0000,t+1
+Talcher,2019-10-17,Thursday,491.9,Severe,#7e0023,t+2
+Talcher,2019-10-18,Friday,549.1,Severe,#7e0023,t+3
+Talcher,2019-10-19,Saturday,413.6,Severe,#7e0023,t+4
+Talcher,2019-10-20,Sunday,433.2,Severe,#7e0023,t+5
+Thiruvananthapuram,2019-10-16,Wednesday,23.5,Good,#00e400,t+1
+Thiruvananthapuram,2019-10-17,Thursday,84.9,Satisfactory,#92d050,t+2
+Thiruvananthapuram,2019-10-18,Friday,182.9,Moderate,#ffff00,t+3
+Thiruvananthapuram,2019-10-19,Saturday,256.3,Poor,#ff7e00,t+4
+Thiruvananthapuram,2019-10-20,Sunday,104.6,Moderate,#ffff00,t+5
+Visakhapatnam,2019-10-16,Wednesday,27.0,Good,#00e400,t+1
+Visakhapatnam,2019-10-17,Thursday,154.5,Moderate,#ffff00,t+2
+Visakhapatnam,2019-10-18,Friday,308.7,Very Poor,#ff0000,t+3
+Visakhapatnam,2019-10-19,Saturday,383.2,Very Poor,#ff0000,t+4
+Visakhapatnam,2019-10-20,Sunday,178.5,Moderate,#ffff00,t+5

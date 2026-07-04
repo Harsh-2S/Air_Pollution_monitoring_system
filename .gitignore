@@ -1,0 +1,25 @@
+# Large data files not needed for deployment
+data/city_hour.csv
+data/station_hour.csv
+data/station_day.csv
+data/stations.csv
+data/city_day.csv
+data/sequences/
+
+# Comparison models (only keep primary model)
+models/comparison_*.keras
+models/*_SIGMOID_OLD.*
+
+# Checkpoints
+checkpoints/
+
+# Package duplicate
+package/
+
+# Zip archive
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.env

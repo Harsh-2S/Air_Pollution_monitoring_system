@@ -1,0 +1,38 @@
+=================================================================
+PHASE 4 REPORT — CNN-LSTM-GRU MODEL TRAINING (v2 FIXED)
+=================================================================
+Architecture:
+  CNN      : 2× Conv1D(64, k=3, causal) + MaxPool(2)
+  LSTM-1   : 128 units, return_sequences=True   ← dual LSTM
+  LSTM-2   : 64  units, return_sequences=True   ← added (blueprint)
+  GRU      : 2× 64 units, return_sequences=True
+  Attention: Bahdanau (additive), 32 units
+  Head     : Dense(64) → BN → Dropout → Dense(32) → Dense(5,linear)
+  Total params: 227,685
+
+Fixes applied in this version:
+  ✅ Output activation = LINEAR  (was sigmoid — blocked AQI > training max)
+  ✅ Two stacked LSTMs           (was one — blueprint specifies 128→64)
+  ✅ Scatter plot axes dynamic   (was hardcoded [0,1])
+  ✅ Config merged on save       (OUTPUT_ACTIVATION + ARCHITECTURE_VERSION added)
+
+Training config:
+  Loss         : Huber (delta=1.0)
+  Optimizer    : Adam (lr=1e-3, clipnorm=1.0)
+  Batch size   : 64
+  Early stop   : patience=15, restore_best_weights=True
+  LR scheduler : ReduceLROnPlateau(factor=0.5, patience=7, min_lr=1e-6)
+
+Results:
+  Total epochs run : 23
+  Best epoch       : 7
+  Best val_loss    : 0.010565
+  Best val_mae     : 0.095368
+
+Models saved:
+  /content/drive/MyDrive/AQI_Forecasting/models/cnn_lstm_gru_aqi.keras
+  /content/drive/MyDrive/AQI_Forecasting/models/cnn_lstm_gru_aqi.h5
+
+🎯 PHASE 4 COMPLETE
+   Run Phase 5 next for test-set evaluation with per-city inverse scaling.
+=================================================================

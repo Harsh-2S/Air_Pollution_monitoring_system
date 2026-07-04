@@ -1,0 +1,46 @@
+======================================================================
+PHASE 2 REPORT — PREPROCESSING & IMPUTATION
+======================================================================
+Generated : 2026-04-26 09:34
+
+── IMPUTATION SUMMARY ───────────────────────────────────────────
+  PM2.5         Before= 4,598  After=   0  Filled= 4,598  [Forward/Backward fill]
+  PM10          Before=11,140  After=   0  Filled=11,140  [KNN]
+  NO            Before= 3,582  After=   0  Filled= 3,582  [Forward/Backward fill]
+  NO2           Before= 3,585  After=   0  Filled= 3,585  [Forward/Backward fill]
+  NOx           Before= 4,185  After=   0  Filled= 4,185  [Forward/Backward fill]
+  NH3           Before=10,328  After=   0  Filled=10,328  [KNN]
+  CO            Before= 2,059  After=   0  Filled= 2,059  [Forward/Backward fill]
+  SO2           Before= 3,854  After=   0  Filled= 3,854  [Forward/Backward fill]
+  O3            Before= 4,022  After=   0  Filled= 4,022  [Forward/Backward fill]
+  Benzene       Before= 5,623  After=   0  Filled= 5,623  [Forward/Backward fill]
+  Toluene       Before= 8,041  After=   0  Filled= 8,041  [Forward/Backward fill]
+  Xylene        Before=18,109  After=   0  Filled=18,109  [KNN]
+  AQI           Before= 4,681  After=   0  Filled= 4,681  [Dropped (target)]
+
+── TEMPORAL SPLIT ───────────────────────────────────────────────
+  Train : up to 2018-11-07   (12,464 rows)
+  Val   : up to 2019-09-04   (5,430 rows)
+  Test  : rest               (6,956 rows)
+
+── SCALING ──────────────────────────────────────────────────────
+  Method     : MinMaxScaler(feature_range=(0,1))
+  Scope      : per-city (one scaler per city)
+  Fit on     : TRAIN rows only
+  Cities     : 26
+  Saved to   : /content/drive/MyDrive/AQI_Forecasting/scalers/city_scalers.pkl
+
+── OUTPUTS ──────────────────────────────────────────────────────
+  Processed CSV   : /content/drive/MyDrive/AQI_Forecasting/data/city_day_processed.csv
+  Scalers (.pkl)  : /content/drive/MyDrive/AQI_Forecasting/scalers/city_scalers.pkl
+  Config updated  : /content/drive/MyDrive/AQI_Forecasting/project_config.json
+
+── PHASE 3 INPUTS ───────────────────────────────────────────────
+  Load: city_day_processed.csv
+  Load: city_scalers.pkl
+  Load: project_config.json
+  Task: Feature engineering + sliding window sequence builder
+
+======================================================================
+PHASE 2 COMPLETE ✅
+======================================================================

@@ -1,0 +1,73 @@
+======================================================================
+PHASE 1 EDA REPORT — CNN-LSTM-GRU AQI FORECASTING
+======================================================================
+Generated on    : 2026-04-26 08:59
+Dataset file    : /content/drive/MyDrive/AQI_Forecasting/data/city_day.csv
+
+── DATASET STRUCTURE ───────────────────────────────────────────
+  Total rows      : 29,531
+  Total columns   : 16
+  Date range      : 2015-01-01 → 2020-07-01
+  Unique cities   : 26
+  Pollutant cols  : ['PM2.5', 'PM10', 'NO', 'NO2', 'NOx', 'NH3', 'CO', 'SO2', 'O3', 'Benzene', 'Toluene', 'Xylene']
+
+── MISSING DATA ────────────────────────────────────────────────
+    Xylene         61.32%  → KNN impute
+    PM10           37.72%  → KNN impute
+    NH3            34.97%  → KNN impute
+    Toluene        27.23%  → Forward fill
+    Benzene        19.04%  → Forward fill
+    AQI            15.85%  → Forward fill
+    PM2.5          15.57%  → Forward fill
+    NOx            14.17%  → Forward fill
+    O3             13.62%  → Forward fill
+    SO2            13.05%  → Forward fill
+    NO2            12.14%  → Forward fill
+    NO             12.13%  → Forward fill
+    CO              6.97%  → Forward fill
+
+── AQI STATISTICS ──────────────────────────────────────────────
+    Mean   : 166.46
+    Median : 118.00
+    Std    : 140.70
+    Skew   : 3.3968
+    Min    : 13.00
+    Max    : 2049.00
+
+── STATIONARITY (ADF TEST) ─────────────────────────────────────
+    Stationary cities     : 17/26
+    Non-stationary cities : 9/26
+    Decision: NO differencing — use MinMaxScaler per city instead
+
+── AUTOCORRELATION ─────────────────────────────────────────────
+    Average last significant ACF lag: 60 days
+    Chosen lookback window          : 30 days ✅
+
+── TOP POLLUTANT PREDICTORS ─────────────────────────────────────
+    PM10          |r| = 0.803
+    CO            |r| = 0.683
+    PM2.5         |r| = 0.659
+    NO2           |r| = 0.537
+    SO2           |r| = 0.491
+
+── PHASE 2 ACTION ITEMS ────────────────────────────────────────
+    1. Sort by [City, Date]
+    2. City-wise forward fill (max 3 days) for moderate-missing cols
+    3. KNN impute (k=5) for high-missing cols (Benzene/Toluene/Xylene)
+    4. Drop rows where AQI is still NaN
+    5. Fit MinMaxScaler per city (on train split only)
+    6. Save processed CSV to Drive
+
+── PLOTS SAVED ─────────────────────────────────────────────────
+    /content/drive/MyDrive/AQI_Forecasting/plots/
+    01_missing_by_column_city.png
+    02_missing_matrix.png
+    03_aqi_distribution.png
+    04_pollutant_correlation.png
+    05_acf_pacf.png
+    06_city_aqi_trends.png
+    07_yearly_trend.png
+
+======================================================================
+END OF PHASE 1 REPORT
+======================================================================

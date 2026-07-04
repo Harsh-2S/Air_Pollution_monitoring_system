@@ -1,0 +1,29 @@
+============================================================
+PHASE 3 — FEATURE ENGINEERING & SEQUENCE BUILDING
+============================================================
+Features created        : 33
+  Pollutants (scaled)   : 12
+  AQI scaled            : 1
+  Lag features          : 5
+  Rolling statistics    : 6
+  Datetime / cyclical   : 9
+
+Lookback window         : 30 days
+Forecast horizon        : 5 days
+
+Sequences built:
+  Train : X=(11402, 30, 33)  y=(11402, 5)
+  Val   : X=(5305, 30, 33)    y=(5305, 5)
+  Test  : X=(6479, 30, 33)   y=(6479, 5)
+
+Files saved:
+  /content/drive/MyDrive/AQI_Forecasting/data/sequences/X_train.npy
+  /content/drive/MyDrive/AQI_Forecasting/data/sequences/y_train.npy
+  /content/drive/MyDrive/AQI_Forecasting/data/sequences/X_val.npy
+  /content/drive/MyDrive/AQI_Forecasting/data/sequences/y_val.npy
+  /content/drive/MyDrive/AQI_Forecasting/data/sequences/X_test.npy
+  /content/drive/MyDrive/AQI_Forecasting/data/sequences/y_test.npy
+  /content/drive/MyDrive/AQI_Forecasting/scalers/pollutant_scaler.pkl
+
+🎯 PHASE 3 COMPLETE — say "Phase 4 code" to build the CNN-LSTM-GRU model
+============================================================
